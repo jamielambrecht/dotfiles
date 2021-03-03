@@ -1,0 +1,10 @@
+#!/bin/bash
+
+## Created By Aditya Shakya
+
+# Launch Rofi
+rofi -modi run,drun -show drun -location 1 \
+	-xoffset 2 -yoffset 32 -line-padding 4 -columns 1 -width 300 -lines 10 \
+	-padding 25 \
+	-hide-scrollbar -show-icons -drun-icon-theme "Papirus" \
+	-font "Terminus (TTF) 10"

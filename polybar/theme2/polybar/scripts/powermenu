@@ -1,0 +1,11 @@
+#!/bin/bash
+
+## Created By Aditya Shakya
+
+MENU="$(rofi -sep "|" -dmenu -i -p 'System' -location 1 -yoffset 32 -xoffset 2 -width 300 -hide-scrollbar -line-padding 4 -padding 20 -lines 4 -font "Terminus (TTF) 10" <<< " Lock| Logout| Reboot| Shutdown")"
+            case "$MENU" in
+#                *Lock) i3lock-fancy ;;
+                *Logout) openbox --exit;;
+                *Reboot) systemctl reboot ;;
+                *Shutdown) systemctl -i poweroff
+            esac
